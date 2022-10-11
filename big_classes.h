@@ -10,11 +10,11 @@ class Object{
 
 class Hardware: public Object{
     public:
-
     int condition=100;
     int RepairTime=0;
+    
 
-    void state(){
+    virtual void state(){
        if (condition > 70){
         green();
         cout << "The component is good condition\n";
@@ -32,6 +32,7 @@ class Hardware: public Object{
         cout << "The component was destroyed\n";
        }
     }
+    
 };
 
 class Humans: public Object{
@@ -45,7 +46,7 @@ class Humans: public Object{
     int BusyStatus=0;
     string name;
 
-    void being(){
+    virtual void being(){
         if(numbers<=0){
             red();
             cout << "the unit have all perished!\n";

@@ -15,7 +15,7 @@ float mood(int a, int b, int c){
 int main(){
     
     Reactor MainReactor;
-    MainReactor.condition=30;
+    //MainReactor.condition=30;
     Shield MainShield;
     LifeSuport systemLS;
     Hull MainHull;
